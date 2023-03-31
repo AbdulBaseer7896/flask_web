@@ -1,0 +1,40 @@
+
+
+.header-image img{
+    text-align: center;
+    width: 99vw;
+    height: 80vh;
+    display: block;
+}
+
+
+.heading-1 h1{
+    text-align: center;
+    margin: auto;
+    color: red;
+    border: 2px solid green;
+}
+
+
+.btn-apply a{
+    /* border: 3px solid red; */
+    display: block;
+    background: gray;
+    color: whitesmoke;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.btn-apply :hover{
+    background: whitesmoke;
+    color: gray;
+    border: 2px solid gray;
+}
+a:link{
+    text-decoration: none;
+}
+a{
+    color: whitesmoke;
+    font-size: xx-large;
+}

@@ -1,0 +1,17 @@
+{% for job in jobs %}
+<div>
+
+    {% if job %}
+<h4><b>Job Tilte: </b>{{job['job_tiltes']}}</h4>
+{% else %}
+<h4>The job tilte is hidde</h4>
+{% endif %}
+<p><b>Location: </b>{{job['area']}}</p>
+<p><b>Requrements: </b>{{job['requrements']}}</p>
+<h2><b>Salary: </b>{{job['salary']}}</h2>
+<div class="btn-apply">
+    <a href="#">Apply Now</a>
+</div>
+<hr>
+</div>
+{% endfor %}

@@ -1,14 +1,15 @@
-from flask import Flask
-from flask import request
-from flask import render_template
+from flask import Flask, render_template, jsonify, request
+from con_database import load_jobs_from_db
+
+
+# JOBS = []
 
 app = Flask(__name__)
 
-
 @app.route("/")
-def hello_world():
-  print("this is web page")
-  return render_template("home.html")
+def hello_baseer():
+  jobs = load_jobs_from_db()
+  return render_template('home.html', jobs=jobs)
 
 
 if __name__ == '__main__':
