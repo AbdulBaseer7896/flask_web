@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify, request
 from con_database import load_jobs_from_db
 
-
+ 
 # JOBS = []
 
 app = Flask(__name__)
