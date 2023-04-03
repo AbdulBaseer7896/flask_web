@@ -17,3 +17,30 @@ def load_jobs_from_db():
     for row in result.all():
       jobs.append(row)
     return jobs
+  
+  
+def get_password():
+    with engine.connect() as conn:
+      result = conn.execute(text("select * from loge_in"))
+      jobs = []
+      for row in result.all():
+        jobs.append(row)
+    return jobs
+  
+  
+# def add_information_in_db():
+#       with engine.connect() as conn:
+#       result = conn.execute(text("select * from loge_in"))
+      
+      
+# def add_information_in_db():
+#     with engine.connect() as conn:
+#       result = conn.execute(text("INSERT INTO loge_in(email , passoward)VALUES(':email' , )"))
+#       jobs = []
+#       for row in result.all():
+#         jobs.append(row)
+#     return jobs
+
+  
+  
+  
