@@ -10,7 +10,7 @@
 <p><b>Requrements: </b>{{job['requrements']}}</p>
 <h2><b>Salary: </b>{{job['salary']}}</h2>
 <div class="btn-apply">
-    <a href="#">Apply Now</a>
+    <a href="{{ url_for('apply', filename='apply.html') }}">Apply Now</a>
 </div>
 <hr>
 </div>

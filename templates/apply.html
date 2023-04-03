@@ -11,9 +11,8 @@
     <header>
         {% include 'header.html'%}
     </header>
-
-    <h1>Kindly Sign in</h1>
-    <form class="container" action="/sign" methods="POST">
+    <h1>Kindly apply at this job</h1>
+    <form class="container" action="/home" method="POST">
 
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -27,10 +26,6 @@
         <input type="submit"  class="btn btn-primary">Submit</input>
     </form>
 
-
-    <div class="container">
-        <a href="{{ url_for('sign', filename='index.html') }}" class="btn btn-primary">Loge_in</a>
-    </div>
 
     <footer>
         {% include 'footer.html' %}

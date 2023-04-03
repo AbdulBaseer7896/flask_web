@@ -18,6 +18,11 @@ def sign():
     print(f"email = {emails} and pasww = {passowards}")
   return render_template('index.html')
 
+
+
+@app.route("/apply")
+def apply():
+  return render_template('apply.html')
 @app.route('/home' , methods = ["POST", "GET"])
 def home():
   if request.method == "POST":
